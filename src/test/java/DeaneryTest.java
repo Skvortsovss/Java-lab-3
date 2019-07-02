@@ -15,7 +15,7 @@ public class DeaneryTest {
         deanery.getGroups().add(gr2);
         deanery.getGroups().get(deanery.getGroups().indexOf(gr1)).addStudent(st1);
         deanery.getGroups().get(deanery.getGroups().indexOf(gr2)).addStudent(st2);
-        deanery.studentTransfer(1,"Economists");
+        deanery.studentTransfer(1,"Engineers");
         String actual = deanery.getGroups().get(deanery.getGroups().indexOf(gr2)).getStaff().get(deanery.getGroups().get(deanery.getGroups().indexOf(gr2)).getStaff().indexOf(st1)).getFIO();
         String expected = "Бочков Вячеслав Алексеевич";
         assertEquals(actual,expected);
